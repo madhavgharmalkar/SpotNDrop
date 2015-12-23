@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Spot N Drop</title>
+
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body ng-app="drop">
+
+	<nav>
+		<div class="nav-wrapper deep-purple darken-2">
+			<div class="container">
+				<a href="#" class="brand-logo center">Spot N Drop</a>
+			</div>
+		</div>
+	</nav>
+
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col s4">
+
+				<div id="drop-box" class="hoverable">
+					<ul id="droplist"></ul>
+				</div>
+				<br>
+
+				<center><a class="waves-effect waves-light btn modal-trigger center-align deep-purple darken-2" href="#drop">Drop!</a></center>
+
+				<br>
+
+				<center><a class="waves-effect waves-light btn modal-trigger center-align deep-purple darken-2" href="#data" id="dataclick">Data!</a></center>
+
+
+
+				<!-- Modal Structure -->
+				<div id="drop" class="modal">
+					<div class="modal-content">
+						<h4>Add Drop</h4>
+						
+						<div class="row">
+							<div class="class col s12">
+								<div class="row">
+									<div class="col s6 offset-s3">
+										<input placeholder="Enter first name" id="name" type="text" class="validate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s6 offset-s3">
+										<textarea id="message" class="materialize-textarea"></textarea>
+										<label for="message">Message</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat" id="dropit">Drop!</a>
+					</div>
+				</div>
+
+				<div id="data" class="modal">
+					<div class="modal-content">
+						<div class="row">
+							<div class="class col s12">
+								<div class="row">
+									<h5>Unhappy</h5>
+									<p id="unhappy"></p>
+								</div>
+
+								<div class="row">
+									<h5>Happy</h5>
+									<p id="happy"></p>
+								</div>
+							</div>
+						</div>
+
+
+
+
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+						</a>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="col s8">
+				<div id="map" class="hoverable"></div>		
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCt1ssKUdDFFoQfKeGY_ziKvzn-VWYE1x0&callback=initMap"
+	async defer></script>
+
+
+</body>
+</html>

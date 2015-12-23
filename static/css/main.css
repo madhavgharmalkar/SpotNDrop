@@ -1,0 +1,46 @@
+html, body{
+	background-color: #ecf0f1;
+}
+
+
+#drop-box{
+	background-color: #ecf0f1;
+	width: 25vw;
+	height: 40vw;
+
+	overflow: scroll;
+	overflow-x: hidden;
+
+	margin: 0 auto;
+}
+
+.hundred{
+	height: 100%;
+}
+
+.centre {
+	margin 0: auto;
+	position: relative;
+}
+
+.dropitem{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 7px;
+	text-align: left;
+
+
+	border: 1px black;
+
+	border-bottom: 1px #34495e;
+	border-top: 1px #34495e;
+
+}
+
+#map{
+
+	width: 40vw;
+	height: 40vw;
+
+	margin: 0 auto;
+}
